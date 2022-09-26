@@ -1,5 +1,6 @@
 import Button from "../ui/button";
 import DateIcon from "../icons/date-icon";
+import AddressIcon from "../icons/address-icon";
 import classes from "./event-item.module.css";
 
 function EventItem(props) {
@@ -25,6 +26,7 @@ function EventItem(props) {
             <time>{humanReadableDate}</time>
           </div>
           <div className={classes.address}>
+            <AddressIcon />
             <address>{formattedAddress}</address>
           </div>
         </div>
