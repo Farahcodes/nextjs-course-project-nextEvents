@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
+import { Fragment } from "react";
 import { getEventById } from "../../dummy-data";
+import { EventSummary } from "../../components/event-detail/event-summary";
 
 function EventDetailPage() {
   const router = useRouter();
@@ -11,9 +13,9 @@ function EventDetailPage() {
     return <p>No event found!</p>;
   }
   return (
-    <div>
-      <h1>Event Detail</h1>
-    </div>
+    <Fragment>
+      <EventSummary />
+    </Fragment>
   );
 }
 
