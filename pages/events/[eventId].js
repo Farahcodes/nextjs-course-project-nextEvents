@@ -16,7 +16,11 @@ function EventDetailPage() {
   }
   return (
     <Fragment>
-      <EventSummary />
+      <EventSummary title={event.title} />
+      <EventLogistics />
+      <EventContent>
+        <p>{event.description}</p>
+      </EventContent>
     </Fragment>
   );
 }
